@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --foreground-rgb: 255, 255, 255; */
+    /* --background-start-rgb: 0, 0, 0; */
+    /* --background-end-rgb: 0, 0, 0; */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.titleGradient {
+  background-image: linear-gradient(
+    0deg,
+    hsla(156, 100%, 41%, 1) 0%,
+    hsla(152, 92%, 64%, 1) 60%
+  );
+}
+
+.imgBg {
+  background-image: linear-gradient(
+    45deg,
+    #38b2ac 0%,
+    rgba(56, 178, 172, 0.7) 50%,
+    rgba(56, 178, 172, 0.4) 100%
+  );
+}
